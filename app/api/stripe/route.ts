@@ -52,7 +52,7 @@ export async function GET(){
             }],
             metadata: {
                 userId,
-            }
+            },
         })
 
         return new NextResponse(JSON.stringify({url: stripeSession.url}))

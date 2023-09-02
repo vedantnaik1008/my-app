@@ -3,7 +3,7 @@ import {headers} from "next/headers";
 import { NextResponse } from "next/server";
 import prismadb from "@/lib/prismadb";
 import { stripe } from "@/lib/stripe";
-stripe
+
 
 export async function POST(req: Request) {
     const body = await req.text();
@@ -22,6 +22,7 @@ export async function POST(req: Request) {
     }
 
     const session = event.data.object as Stripe.Checkout.Session;
+    
     if(event.type === "checkout.session.completed"){
         const subscription = await stripe.subscriptions.retrieve(
             session.subscription as string

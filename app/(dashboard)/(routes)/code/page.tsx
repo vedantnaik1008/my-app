@@ -20,6 +20,7 @@ import UserAvatar from '@/components/User-avatar'
 import Empty from '@/components/Empty'
 import { formSchema } from './constants'
 import { useProModal } from '@/hooks/use-pro-modal'
+import toast from 'react-hot-toast'
 const CodePage = () => {
     const proModal = useProModal()
     const router = useRouter()
@@ -46,6 +47,8 @@ const CodePage = () => {
        } catch (error: any) {
         if(error?.response?.status === 403){
           proModal.onOpen()
+        }else{
+          toast.error("Something went wrong")
         }
        } finally{
         router.refresh()
