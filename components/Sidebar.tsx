@@ -7,7 +7,6 @@ import { Montserrat } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { Settings,Code,Music,VideoIcon,ImageIcon,LayoutDashboard, MessageSquare } from 'lucide-react'
 import {usePathname} from 'next/navigation'
-import internal from 'stream'
 import FreeCounter from './FreeCounter'
 
 const montserrat = Montserrat({
