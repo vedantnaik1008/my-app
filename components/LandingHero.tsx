@@ -15,7 +15,7 @@ const LandingHero = () => {
                 strings: ["Chatbot.",
                 "Photo Generation.",
                 "Music Generation.",
-                "Code Generation.",
+                "Animation Generation.",
                 "Video Generation.",], 
                 autoStart: true,
                 loop: true,

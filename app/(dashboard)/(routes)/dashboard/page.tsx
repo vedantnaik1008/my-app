@@ -29,9 +29,9 @@ const tools = [
       color: "text-orange-700",
       bgColor: "text-orange-700/10"
   },
-  {label: 'Code Generation',
+  {label: 'Animation Generation',
     icon: Code,
-    href: "/code",
+    href: "/animation",
     color: "text-green-700",
     bgColor: "text-green-700/10"
   },
