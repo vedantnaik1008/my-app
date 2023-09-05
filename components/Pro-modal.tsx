@@ -13,10 +13,7 @@ import toast from "react-hot-toast"
 
 
 const tools = [
-  {label: 'Conversation',
-  icon: MessageSquare,
-  bgColor: "text-violet-500/10",
-  color: "text-violet-500"},
+  
   {label: 'Music Generation',
   icon: Music,
   color: "text-emerald-500",

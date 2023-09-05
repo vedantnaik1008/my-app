@@ -104,7 +104,7 @@ const AnimationPage = () => {
             <Empty label="No video generated." />
           )}
           {video && (
-            <video className='w-full aspect-video mt-8 rounded-lg border bg-black' src={video} controls autoPlay loop preload="auto"></video>
+            <video className='w-full aspect-video mt-8 rounded-lg border bg-black' src={video} controls autoPlay loop preload="auto" />
           )}
         </div>
       </div>

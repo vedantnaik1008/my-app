@@ -21,11 +21,7 @@ const routess = [{
         href: "/dashboard",
         color: "text-sky-500" ,
         },
-        {label: 'Conversation',
-        icon: MessageSquare,
-        href: "/conversation",
-        color: "text-violet-700" ,
-        },
+        
         {label: 'Image Generation',
         icon: ImageIcon,
         href: "/image",

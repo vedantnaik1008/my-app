@@ -6,11 +6,7 @@ import { Code,VideoIcon,ImageIcon,Music,ArrowRight,MessageSquare } from "lucide-
 import { useRouter } from "next/navigation";
 
 const tools = [
-  {label: 'Conversation',
-  icon: MessageSquare,
-  href: "/conversation",
-  bgColor: "text-violet-500/10",
-  color: "text-violet-500"},
+  
   {label: 'Music Generation',
   icon: Music,
   href: "/music",
