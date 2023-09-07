@@ -1,7 +1,7 @@
 "use client"
 import * as z  from 'zod'
 import axios from 'axios'
-import { VideoIcon } from 'lucide-react'
+import { Film } from 'lucide-react'
 import {useForm} from 'react-hook-form'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -33,7 +33,7 @@ const AnimationPage = () => {
        setVideo(undefined)
         const response = await axios.post('/api/animation',  values)
         console.log(response)
-        setVideo(response.data[0])
+        setVideo(response.data)
         form.reset()
        } catch (error: any) {
         if(error?.response?.status === 403){
@@ -51,7 +51,7 @@ const AnimationPage = () => {
       <Heading
         title="Animation Generation"
         description="Turn your prompt into Animation."
-        icon={VideoIcon}
+        icon={Film}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
       />

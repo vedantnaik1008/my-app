@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Code,VideoIcon,ImageIcon,Music,ArrowRight,MessageSquare } from "lucide-react";
+import { Film,VideoIcon,ImageIcon,Music,ArrowRight,MessageSquare } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const tools = [
@@ -26,7 +26,7 @@ const tools = [
       bgColor: "text-orange-700/10"
   },
   {label: 'Animation Generation',
-    icon: Code,
+    icon: Film,
     href: "/animation",
     color: "text-green-700",
     bgColor: "text-green-700/10"

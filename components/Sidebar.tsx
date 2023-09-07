@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Logo from '../public/logo.png'
 import { Montserrat } from 'next/font/google'
 import { cn } from '@/lib/utils'
-import { Settings,Code,Music,VideoIcon,ImageIcon,LayoutDashboard, MessageSquare } from 'lucide-react'
+import { Settings,Film,Music,VideoIcon,ImageIcon,LayoutDashboard } from 'lucide-react'
 import {usePathname} from 'next/navigation'
 import FreeCounter from './FreeCounter'
 
@@ -37,14 +37,14 @@ const routess = [{
         color: "text-emerald-500",
         },
         {label: 'Animation Generation',
-        icon: Code,
+        icon: Film,
         href: "/animation",
         color: "text-green-700",
         },
         {label: 'Settings',
         icon: Settings,
         href: "/settings",
-        color: "text-green-700",
+        color: "text-gray-400",
     }
 ]
 
